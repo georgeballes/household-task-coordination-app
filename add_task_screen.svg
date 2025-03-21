@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="390" height="844" viewBox="0 0 390 844">
+<defs>
+</defs>
+<rect x="0" y="0" width="390" height="844" rx="40" ry="40" fill="#F8F8F8" />
+<rect x="0" y="0" width="390" height="44" rx="40" ry="40" fill="white" />
+<rect x="0" y="44" width="390" height="50" fill="white" />
+<text x="195.0" y="74" font-size="24" text-anchor="middle" fill="#333333" font-weight="bold">Add New Task</text>
+<rect x="0" y="764" width="390" height="80" rx="0" ry="0" fill="white" />
+<circle cx="78.0" cy="794" r="15" fill="lightgray" />
+<text x="78.0" y="824" font-size="12" text-anchor="middle" fill="#333333">Home</text>
+<circle cx="156.0" cy="794" r="15" fill="#4A80F0" />
+<text x="156.0" y="824" font-size="12" text-anchor="middle" fill="#333333">Tasks</text>
+<circle cx="234.0" cy="794" r="15" fill="lightgray" />
+<text x="234.0" y="824" font-size="12" text-anchor="middle" fill="#333333">Calendar</text>
+<circle cx="312.0" cy="794" r="15" fill="lightgray" />
+<text x="312.0" y="824" font-size="12" text-anchor="middle" fill="#333333">Profile</text>
+<text x="30" y="74" font-size="16" fill="#4A80F0">Cancel</text>
+<text x="30" y="130" font-size="16" fill="#333333" font-weight="bold">Task Name</text>
+<rect x="30" y="145" width="330" height="50" rx="8" ry="8" fill="white" />
+<text x="50" y="175" font-size="16" fill="#777777">Enter task name</text>
+<text x="30" y="210" font-size="16" fill="#333333" font-weight="bold">Assigned To</text>
+<rect x="30" y="225" width="330" height="50" rx="8" ry="8" fill="white" />
+<text x="50" y="255" font-size="16" fill="#777777">Select person</text>
+<text x="340" y="255" font-size="12" fill="#777777">▼</text>
+<text x="30" y="290" font-size="16" fill="#333333" font-weight="bold">Date</text>
+<rect x="30" y="305" width="330" height="50" rx="8" ry="8" fill="white" />
+<text x="50" y="335" font-size="16" fill="#777777">Select date</text>
+<text x="340" y="335" font-size="12" fill="#777777">▼</text>
+<text x="30" y="370" font-size="16" fill="#333333" font-weight="bold">Time</text>
+<rect x="30" y="385" width="330" height="50" rx="8" ry="8" fill="white" />
+<text x="50" y="415" font-size="16" fill="#777777">Select time</text>
+<text x="340" y="415" font-size="12" fill="#777777">▼</text>
+<text x="30" y="450" font-size="16" fill="#333333" font-weight="bold">Repeat</text>
+<rect x="30" y="465" width="330" height="50" rx="8" ry="8" fill="white" />
+<text x="50" y="495" font-size="16" fill="#777777">Never</text>
+<text x="340" y="495" font-size="12" fill="#777777">▼</text>
+<text x="30" y="530" font-size="16" fill="#333333" font-weight="bold">Location</text>
+<rect x="30" y="545" width="330" height="50" rx="8" ry="8" fill="white" />
+<text x="50" y="575" font-size="16" fill="#777777">Select location</text>
+<text x="340" y="575" font-size="12" fill="#777777">▼</text>
+<text x="30" y="610" font-size="16" fill="#333333" font-weight="bold">Notes</text>
+<rect x="30" y="625" width="330" height="80" rx="8" ry="8" fill="white" />
+<text x="50" y="655" font-size="16" fill="#777777">Add notes here...</text>
+<rect x="30" y="730" width="330" height="50" rx="25" ry="25" fill="#4A80F0" />
+<text x="195.0" y="760" font-size="18" text-anchor="middle" fill="white" font-weight="bold">Save Task</text>
+</svg>

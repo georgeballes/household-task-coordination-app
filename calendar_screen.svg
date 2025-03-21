@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="390" height="844" viewBox="0 0 390 844">
+<defs>
+</defs>
+<rect x="0" y="0" width="390" height="844" rx="40" ry="40" fill="#F8F8F8" />
+<rect x="0" y="0" width="390" height="44" rx="40" ry="40" fill="white" />
+<rect x="0" y="44" width="390" height="50" fill="white" />
+<text x="195.0" y="74" font-size="24" text-anchor="middle" fill="#333333" font-weight="bold">Calendar</text>
+<rect x="0" y="764" width="390" height="80" rx="0" ry="0" fill="white" />
+<circle cx="78.0" cy="794" r="15" fill="lightgray" />
+<text x="78.0" y="824" font-size="12" text-anchor="middle" fill="#333333">Home</text>
+<circle cx="156.0" cy="794" r="15" fill="#4A80F0" />
+<text x="156.0" y="824" font-size="12" text-anchor="middle" fill="#333333">Tasks</text>
+<circle cx="234.0" cy="794" r="15" fill="lightgray" />
+<text x="234.0" y="824" font-size="12" text-anchor="middle" fill="#333333">Calendar</text>
+<circle cx="312.0" cy="794" r="15" fill="lightgray" />
+<text x="312.0" y="824" font-size="12" text-anchor="middle" fill="#333333">Profile</text>
+<rect x="0" y="110" width="390" height="50" fill="white" />
+<text x="195.0" y="140" font-size="18" text-anchor="middle" fill="#333333" font-weight="bold">&lt; March 2025 &gt;</text>
+<rect x="20" y="170" width="350" height="300" rx="10" ry="10" fill="white" />
+<text x="45.0" y="195" font-size="14" text-anchor="middle" fill="#777777">M</text>
+<text x="95.0" y="195" font-size="14" text-anchor="middle" fill="#777777">T</text>
+<text x="145.0" y="195" font-size="14" text-anchor="middle" fill="#777777">W</text>
+<text x="195.0" y="195" font-size="14" text-anchor="middle" fill="#777777">T</text>
+<text x="245.0" y="195" font-size="14" text-anchor="middle" fill="#777777">F</text>
+<text x="295.0" y="195" font-size="14" text-anchor="middle" fill="#777777">S</text>
+<text x="345.0" y="195" font-size="14" text-anchor="middle" fill="#777777">S</text>
+<text x="45.0" y="235" font-size="14" text-anchor="middle" fill="#777777">24</text>
+<text x="95.0" y="235" font-size="14" text-anchor="middle" fill="#777777">25</text>
+<text x="145.0" y="235" font-size="14" text-anchor="middle" fill="#777777">26</text>
+<text x="195.0" y="235" font-size="14" text-anchor="middle" fill="#777777">27</text>
+<text x="245.0" y="235" font-size="14" text-anchor="middle" fill="#777777">28</text>
+<text x="295.0" y="235" font-size="14" text-anchor="middle" fill="#333333">1</text>
+<text x="345.0" y="235" font-size="14" text-anchor="middle" fill="#333333">2</text>
+<text x="45.0" y="275" font-size="14" text-anchor="middle" fill="#333333">3</text>
+<text x="95.0" y="275" font-size="14" text-anchor="middle" fill="#333333">4</text>
+<text x="145.0" y="275" font-size="14" text-anchor="middle" fill="#333333">5</text>
+<text x="195.0" y="275" font-size="14" text-anchor="middle" fill="#333333">6</text>
+<text x="245.0" y="275" font-size="14" text-anchor="middle" fill="#333333">7</text>
+<text x="295.0" y="275" font-size="14" text-anchor="middle" fill="#333333">8</text>
+<text x="345.0" y="275" font-size="14" text-anchor="middle" fill="#333333">9</text>
+<text x="45.0" y="315" font-size="14" text-anchor="middle" fill="#333333">10</text>
+<text x="95.0" y="315" font-size="14" text-anchor="middle" fill="#333333">11</text>
+<circle cx="95.0" cy="325" r="3" fill="#4A80F0" />
+<text x="145.0" y="315" font-size="14" text-anchor="middle" fill="#333333">12</text>
+<text x="195.0" y="315" font-size="14" text-anchor="middle" fill="#333333">13</text>
+<text x="245.0" y="315" font-size="14" text-anchor="middle" fill="#333333">14</text>
+<text x="295.0" y="315" font-size="14" text-anchor="middle" fill="#333333">15</text>
+<circle cx="295.0" cy="325" r="3" fill="#F5A623" />
+<text x="345.0" y="315" font-size="14" text-anchor="middle" fill="#333333">16</text>
+<text x="45.0" y="355" font-size="14" text-anchor="middle" fill="#333333">17</text>
+<circle cx="45.0" cy="365" r="3" fill="#F5A623" />
+<text x="95.0" y="355" font-size="14" text-anchor="middle" fill="#333333">18</text>
+<circle cx="145.0" cy="350" r="15" fill="#4A80F0" />
+<text x="145.0" y="355" font-size="14" text-anchor="middle" fill="white">19</text>
+<circle cx="145.0" cy="365" r="3" fill="#4A80F0" />
+<text x="195.0" y="355" font-size="14" text-anchor="middle" fill="#333333">20</text>
+<text x="245.0" y="355" font-size="14" text-anchor="middle" fill="#333333">21</text>
+<circle cx="245.0" cy="365" r="3" fill="#4A80F0" />
+<text x="295.0" y="355" font-size="14" text-anchor="middle" fill="#333333">22</text>
+<text x="345.0" y="355" font-size="14" text-anchor="middle" fill="#333333">23</text>
+<text x="45.0" y="395" font-size="14" text-anchor="middle" fill="#333333">24</text>
+<text x="95.0" y="395" font-size="14" text-anchor="middle" fill="#333333">25</text>
+<text x="145.0" y="395" font-size="14" text-anchor="middle" fill="#333333">26</text>
+<text x="195.0" y="395" font-size="14" text-anchor="middle" fill="#333333">27</text>
+<text x="245.0" y="395" font-size="14" text-anchor="middle" fill="#333333">28</text>
+<text x="295.0" y="395" font-size="14" text-anchor="middle" fill="#333333">29</text>
+<text x="345.0" y="395" font-size="14" text-anchor="middle" fill="#333333">30</text>
+<text x="45.0" y="435" font-size="14" text-anchor="middle" fill="#333333">31</text>
+<text x="95.0" y="435" font-size="14" text-anchor="middle" fill="#777777">1</text>
+<text x="145.0" y="435" font-size="14" text-anchor="middle" fill="#777777">2</text>
+<text x="195.0" y="435" font-size="14" text-anchor="middle" fill="#777777">3</text>
+<text x="245.0" y="435" font-size="14" text-anchor="middle" fill="#777777">4</text>
+<text x="295.0" y="435" font-size="14" text-anchor="middle" fill="#777777">5</text>
+<text x="345.0" y="435" font-size="14" text-anchor="middle" fill="#777777">6</text>
+<text x="30" y="490" font-size="18" fill="#333333" font-weight="bold">March 20 Schedule</text>
+<text x="30" y="525" font-size="14" fill="#777777">6:00 PM</text>
+<rect x="90" y="510" width="280" height="60" rx="8" ry="8" fill="white" />
+<rect x="90" y="510" width="8" height="60" rx="4" ry="4" fill="#4A80F0" />
+<text x="110" y="535" font-size="16" fill="#333333" font-weight="bold">Prepare Dinner</text>
+<text x="110" y="555" font-size="14" fill="#777777">You</text>
+<text x="30" y="605" font-size="14" fill="#777777">8:00 PM</text>
+<rect x="90" y="590" width="280" height="60" rx="8" ry="8" fill="white" />
+<rect x="90" y="590" width="8" height="60" rx="4" ry="4" fill="#F5A623" />
+<text x="110" y="615" font-size="16" fill="#333333" font-weight="bold">Laundry</text>
+<text x="110" y="635" font-size="14" fill="#777777">You</text>
+</svg>

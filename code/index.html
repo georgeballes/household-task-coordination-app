@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeTask - Household Task Coordination</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Login Page (initially visible) -->
+        <div id="login-page" class="page">
+            <div class="login-container">
+                <div class="logo-container">
+                    <div class="logo">HT</div>
+                    <h1>HomeTask</h1>
+                    <p>Sign in to manage your household tasks</p>
+                </div>
+                
+                <form id="login-form" class="login-form">
+                    <div id="login-error" class="error-message hidden"></div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    
+                    <p class="text-center">Don't have an account? <a href="#" class="link">Sign up</a></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Main App (initially hidden) -->
+        <div id="main-app" class="hidden">
+            <!-- Navigation -->
+            <nav class="navbar">
+                <div class="container">
+                    <div class="nav-logo">
+                        <div class="logo-small">HT</div>
+                        <span>HomeTask</span>
+                    </div>
+                    
+                    <div class="nav-links desktop-only">
+                        <a href="#" class="nav-link active" data-page="home">Home</a>
+                        <a href="#" class="nav-link" data-page="tasks">Tasks</a>
+                        <a href="#" class="nav-link" data-page="calendar">Calendar</a>
+                        <a href="#" class="nav-link" data-page="profile">Profile</a>
+                    </div>
+                    
+                    <div class="user-menu">
+                        <div class="avatar">A</div>
+                        <span class="desktop-only">Alex</span>
+                    </div>
+                </div>
+                
+                <!-- Mobile Navigation -->
+                <div class="mobile-nav">
+                    <a href="#" class="mobile-nav-link active" data-page="home">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                        <span>Home</span>
+                    </a>
+                    <a href="#" class="mobile-nav-link" data-page="tasks">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                        <span>Tasks</span>
+                    </a>
+                    <a href="#" class="mobile-nav-link" data-page="calendar">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        <span>Calendar</span>
+                    </a>
+                    <a href="#" class="mobile-nav-link" data-page="profile">
+                        <svg viewBox="0 0 24 24" class="icon"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                        <span>Profile</span>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Content Pages -->
+            <main class="container">
+                <!-- Home Page -->
+                <div id="home-page" class="page">
+                    <div class="welcome-card">
+                        <h1>Welcome back, Alex!</h1>
+                        <p>You have <span id="today-task-count">2</span> tasks today</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>Today's Tasks</h2>
+                        <div id="today-tasks" class="task-list">
+                            <!-- Tasks will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Household Members</h2>
+                        <div class="member-list">
+                            <div class="member">
+                                <div class="avatar">A</div>
+                                <span>You</span>
+                            </div>
+                            <div class="member">
+                                <div class="avatar">S</div>
+                                <span>Sam</span>
+                            </div>
+                            <div class="member">
+                                <div class="avatar">T</div>
+                                <span>Taylor</span>
+                            </div>
+                            <div class="member add-member">
+                                <div class="avatar-add">+</div>
+                                <span>Add</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Upcoming</h2>
+                        <div class="calendar-preview">
+                            <div class="day-column">
+                                <span class="day-name">M</span>
+                                <div class="day-number today">20</div>
+                                <div class="day-indicator"></div>
+                            </div>
+                            <div class="day-column">
+                                <span class="day-name">T</span>
+                                <div class="day-number">21</div>
+                            </div>
+                            <div class="day-column">
+                                <span class="day-name">W</span>
+                                <div class="day-number">22</div>
+                                <div class="day-indicator"></div>
+                            </div>
+                            <div class="day-column">
+                                <span class="day-name">T</span>
+                                <div class="day-number">23</div>
+                            </div>
+                            <div class="day-column">
+                                <span class="day-name">F</span>
+                                <div class="day-number">24</div>
+                                <div class="day-indicator"></div>
+                            </div>
+                            <div class="day-column">
+                                <span class="day-name">S</span>
+                                <div class="day-number">25</div>
+                            </div>
+                            <div class="day-column">
+                                <span class="day-name">S</span>
+                                <div class="day-number">26</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tasks Page -->
+                <div id="tasks-page" class="page hidden">
+                    <div class="tab-container">
+                        <button class="tab active" data-filter="all">All</button>
+                        <button class="tab" data-filter="mine">Mine</button>
+                        <button class="tab" data-filter="shared">Shared</button>
+                    </div>
+
+                    <div id="all-tasks" class="task-list">
+                        <!-- Tasks will be inserted here by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Task Detail Page -->
+                <div id="task-detail-page" class="page hidden">
+                    <h1 id="task-detail-title" class="text-center">Task Title</h1>
+                    
+                    <div class="card">
+                        <div class="detail-row">
+                            <span class="detail-label">Assigned to</span>
+                            <span id="task-detail-assignee" class="detail-value">You</span>
+                        </div>
+                        
+                        <div class="detail-row">
+                            <span class="detail-label">Date</span>
+                            <span id="task-detail-date" class="detail-value">Today</span>
+                        </div>
+                        
+                        <div class="detail-row">
+                            <span class="detail-label">Time</span>
+                            <span id="task-detail-time" class="detail-value">6:00 PM</span>
+                        </div>
+                        
+                        <div class="detail-row">
+                            <span class="detail-label">Repeats</span>
+                            <span id="task-detail-repeats" class="detail-value">Weekdays</span>
+                        </div>
+                        
+                        <div class="detail-row">
+                            <span class="detail-label">Location</span>
+                            <span id="task-detail-location" class="detail-value">Kitchen</span>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h2>Notes</h2>
+                        <div class="card">
+                            <p id="task-detail-notes">Task notes will appear here.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="reassign-options" class="card hidden">
+                        <h3>Reassign to:</h3>
+                        <div class="reassign-list">
+                            <button class="reassign-option selected" data-member="You (Alex)">You (Alex)</button>
+                            <button class="reassign-option" data-member="Sam">Sam</button>
+                            <button class="reassign-option" data-member="Taylor">Taylor</button>
+                        </div>
+                    </div>
+                    
+                    <div class="button-group">
+                        <button id="complete-task-btn" class="btn btn-success">Complete</button>
+                        <button id="reassign-task-btn" class="btn btn-primary">Reassign</button>
+                    </div>
+                    
+                    <button id="delete-task-btn" class="btn btn-outline-danger">Delete Task</button>
+                    
+                    <button id="back-to-tasks-btn" class="btn btn-text">← Back to Tasks</button>
+                </div>
+
+                <!-- Add Task Page -->
+                <div id="add-task-page" class="page hidden">
+                    <h1>Add New Task</h1>
+                    
+                    <form id="add-task-form">
+                        <div class="form-group">
+                            <label for="task-name">Task Name</label>
+                            <input type="text" id="task-name" placeholder="Enter task name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="task-assignee">Assigned To</label>
+                            <div class="select-wrapper">
+                                <select id="task-assignee">
+                                    <option value="You">You (Alex)</option>
+                                    <option value="Sam">Sam</option>
+                                    <option value="Taylor">Taylor</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="task-date">Date</label>
+                            <input type="text" id="task-date" placeholder="Today" value="Today">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="task-time">Time</label>
+                            <input type="text" id="task-time" placeholder="12:00 PM" value="12:00 PM">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="task-repeat">Repeat</label>
+                            <div class="select-wrapper">
+                                <select id="task-repeat">
+                                    <option value="Never">Never</option>
+                                    <option value="Daily">Daily</option>
+                                    <option value="Weekdays">Weekdays</option>
+                                    <option value="Weekends">Weekends</option>
+                                    <option value="Weekly">Weekly</option>
+                                    <option value="Monthly">Monthly</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="task-location">Location</label>
+                            <input type="text" id="task-location" placeholder="Enter location">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="task-notes">Notes</label>
+                            <textarea id="task-notes" rows="4" placeholder="Add notes here..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Save Task</button>
+                    </form>
+                    
+                    <button id="back-from-add-btn" class="btn btn-text">← Back</button>
+                </div>
+
+                <!-- Calendar Page -->
+                <div id="calendar-page" class="page hidden">
+                    <h1>Calendar</h1>
+                    
+                    <div class="card">
+                        <div class="calendar-header">
+                            <h2>March 2025</h2>
+                            <div class="calendar-nav">
+                                <button class="calendar-nav-btn">
+                                    <svg viewBox="0 0 24 24" class="icon"><path d="M15 19l-7-7 7-7"></path></svg>
+                                </button>
+                                <button class="calendar-nav-btn">
+                                    <svg viewBox="0 0 24 24" class="icon"><path d="M9 5l7 7-7 7"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="calendar-days-header">
+                            <div class="calendar-day-name">Sun</div>
+                            <div class="calendar-day-name">Mon</div>
+                            <div class="calendar-day-name">Tue</div>
+                            <div class="calendar-day-name">Wed</div>
+                            <div class="calendar-day-name">Thu</div>
+                            <div class="calendar-day-name">Fri</div>
+                            <div class="calendar-day-name">Sat</div>
+                        </div>
+                        
+                        <div class="calendar-grid">
+                      <response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>
